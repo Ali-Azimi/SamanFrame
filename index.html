@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saman Callback Simulator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: helvetica;
+        }
+        button {
+            border: 1px solid gray;
+            color: gray;
+            font-weight: 900;
+            padding: 1rem 3rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Saman Callback Simulator</h1>
+    <button onclick="handleCallBack();">Call Back</button>
+
+
+    <script>
+        window.addEventListener("message", (e) => {
+            console.log(e)
+        })
+    </script>
+
+    <script>
+        function handleCallBack() {
+            parent.postMessage("FC20DE6C-C1DA-4C11-82E0-5B2496C0B3FE")
+        }
+
+
+    </script>
+</body>
+</html>
